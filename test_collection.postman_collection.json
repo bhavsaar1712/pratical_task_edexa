@@ -1,0 +1,181 @@
+{
+	"id": "4a018381-19a1-291b-3d35-bc6a8d8fbb19",
+	"name": "test_collection",
+	"description": "",
+	"order": [
+		"dfb4da20-9f8c-ddac-e576-c6559b35e62b",
+		"2a9dae09-337e-15bc-a99e-aca8cd6824ce",
+		"27a02690-ccfd-2194-c623-ebf00c9b354f",
+		"c78c8096-6710-70a7-466a-96ebcd0c3cc5",
+		"39082b32-d4bb-3c3b-137c-c3aba46875ff"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1628290313447,
+	"owner": "9937427",
+	"public": false,
+	"requests": [
+		{
+			"id": "27a02690-ccfd-2194-c623-ebf00c9b354f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8800/api/insert",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628355427395,
+			"name": "addusers",
+			"description": "",
+			"collectionId": "4a018381-19a1-291b-3d35-bc6a8d8fbb19",
+			"responses": [],
+			"rawModeData": "{\"action\":\"Is_insert\",\n\t\"assign_by\":\"Manager\",\n\t\"user\":\"rahul\",\n\t\"role\":\"employees\"\n}"
+		},
+		{
+			"id": "2a9dae09-337e-15bc-a99e-aca8cd6824ce",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8800/api/assignaction",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628355789066,
+			"name": "assignpermissions",
+			"description": "",
+			"collectionId": "4a018381-19a1-291b-3d35-bc6a8d8fbb19",
+			"responses": [],
+			"rawModeData": "{\"action\":\"Is_update\",\n\"assign_to\":\"Manager\",\n\t\"assign_by\":\"HR\"\n}"
+		},
+		{
+			"id": "39082b32-d4bb-3c3b-137c-c3aba46875ff",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8800/api/delete",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4a018381-19a1-291b-3d35-bc6a8d8fbb19",
+			"data": [],
+			"dataMode": "raw",
+			"name": "delete",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1628358893307,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"action\":\"Is_delete\",\n\t\"assign_by\":\"Manager\",\n\t\"id\":\"2\",\n\t\"role\":\"employees\"\n}"
+		},
+		{
+			"id": "c78c8096-6710-70a7-466a-96ebcd0c3cc5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8800/api/update",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628355440708,
+			"name": "update",
+			"description": "",
+			"collectionId": "4a018381-19a1-291b-3d35-bc6a8d8fbb19",
+			"responses": [],
+			"rawModeData": "{\"action\":\"Is_update\",\n\t\"assign_by\":\"Manager\",\n\t\"id\":\"1\",\n\t\"name\":\"Dinesh sir\"\n}"
+		},
+		{
+			"id": "dfb4da20-9f8c-ddac-e576-c6559b35e62b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8800/api/getusers?action=Is_view&assign_by=Manager",
+			"queryParams": [
+				{
+					"key": "action",
+					"value": "Is_view",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "assign_by",
+					"value": "Manager",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1628355564551,
+			"name": "http://localhost:8800/api/getusers?action=View&assign_by=HR&assign_to=Manager",
+			"description": "",
+			"collectionId": "4a018381-19a1-291b-3d35-bc6a8d8fbb19",
+			"responses": [],
+			"rawModeData": "{\"action\":\"View\",\n\t\"assign_by\":\"HR\",\n\t\"assign_to\":\"Manager\"\n}"
+		}
+	]
+}
