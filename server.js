@@ -11,6 +11,9 @@ global.helper= require('../EDEXA_TASK/utils/helper.js');
 var server =app.listen(8800);
  server.on('listening', onListening);
  server.setTimeout(50000);
+ global.SUCCESS= 200;
+ global.NOT_FOUND= 404;
+ global.UNPROCESSED=422
  app.use("/api",require('./app/users/userroutes.js'));
 function onListening() {
     let addr = server.address();
